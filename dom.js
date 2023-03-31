@@ -4,8 +4,10 @@ var header = document.getElementById('main-header');
 header.style.borderBottom = 'solid 5px #000'
 
 //GET ELEMENT  BY CLASS NAME //
-var items= document.getElementsByClassName('title');
-console.log(items[0]);
-items[0].textContent='ADD ITEM';
-items[0].style.fontWeight = 'bold';
-items[0].style.color = 'green';
+var items= document.getElementsByClassName('list-group-item');
+console.log(items);
+items[2].style.backgroundColor = 'green';   // 'C' of color must be in capital letter
+for(var i=0;i<items.length;i++)
+{
+    items[i].style.fontWeight = 'bold';
+}
